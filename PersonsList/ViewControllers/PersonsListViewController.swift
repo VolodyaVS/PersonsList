@@ -12,16 +12,10 @@ class PersonsListViewController: UITableViewController {
     
     let personsList = Person.createPersonList()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        title = "Hello"
-    }
-    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         personsList.count
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personName", for: indexPath)
