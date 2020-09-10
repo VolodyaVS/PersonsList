@@ -14,6 +14,7 @@ class PersonsListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Hello"
     }
     
     // MARK: - Table view data source
